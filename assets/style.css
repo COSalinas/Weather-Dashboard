@@ -11,6 +11,7 @@ label{
     text-align: center;
     color: yellow;
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
     padding: 0%;
     margin-top: 0%;
 }
@@ -20,4 +21,8 @@ label{
 .city{
     width: 90%;
     margin: 2%;
+}
+.search{
+    color: lightcyan;
+    font-family: 'Times New Roman', Times, serif;
 }
