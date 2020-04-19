@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -13,11 +14,32 @@
         <h1>Weather Dashboard</h1>
     </div>
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
+            <form id="city-form">
+                <label for="city-input">Search for a city:</label>
+                <input id="city-input" class="searchBtn col-md-4" type="text">
+                <button id="addBtn" class="col-md-2 btn btn-primary" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+                <div id="cityBtn">
+                </div>
+        </div>
+        <div id="weatherData" class="col-md-8">
+            <div class="bulkWeather">
+                <div class="weatherStrip row"></div>
+                <div class="weatherInfo"></div>
 
+            </div>
+            <div class="fiveDay row">
+
+            </div>
         </div>
     </div>
 
+    <script src="assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     
 </body>
